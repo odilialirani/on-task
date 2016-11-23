@@ -9,9 +9,9 @@ Usage Scenario:
 	Part 1 of lab 3 is Lex/Yacc, assigned on Sept 10th. Users can put in  "Part 1" as the first checkpoint, with deadline on Sept 26th, 11:59pm. Then, s/he can put in subtasks such as: "Adding more tokens", "Add more parser rules", etc.
 
 
---------o----------o----------1---------o---------o---------2-------o------o------o-----------o-----------3------o-------DONE
-    Add more    Add more    Part 1   Command     File    Part 2   Ctrl-C  Exit  Wildcards   Zombies    Part 3  Extra
-     tokens   parser rules           processing  redir                                                         Credits
+--------o----------o----------1---------o---------o---------2-------o------o------3------o-------DONE
+    Add more    Add more    Part 1   Command     File    Part 2   Ctrl-C  Exit  Part 3  Extra
+     tokens   parser rules           processing  redir                                  Credits
 
 
 
