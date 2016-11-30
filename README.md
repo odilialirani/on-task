@@ -9,4 +9,4 @@ Task management application for teams
 
 
 ## Technologies
-HTML, CSS, Angular.JS, Node.JS, NoSQL
+HTML, CSS, Node.JS, PHP, MySQL
