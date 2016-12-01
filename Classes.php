@@ -26,14 +26,12 @@
 
 		function completed() {
 			$this->completed = true;
-			updateDTaskDB();
-			updateTaskCompletion();
+			updateTaskDB();
 		}
 
 		function notComplete() {
 			$this->completed = false;
 			updateTaskDB();
-			updateTaskCompletion();
 		}
 
 		function getCheckpointName() {
@@ -66,12 +64,22 @@
 			$this->checkpoints = $checkpoints;
 		}
 
-		function updateTaskCompletion() {
+		function getStatus() {
 			// TODO: Recalculate percentage from $checkpoints[]->status
+			$completed = 0;
+			$total = 0;
+			foreach ($checkpoints as $cp) {
+				$total = $total + 1;
+				if ($cp->getCheckpointStatus()) {
+					$completed = $completed + 1;
+				}
+			}
+			$this->status = intdiv($completed, $total) * 100;
+			return $this->status;
 		}
 
 		function updateTaskDB() {
-			updateTaskCompletion();
+			$this->getStatus();
 			// TODO: Update DB for changed values
 		}
 	}
