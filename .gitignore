@@ -1,0 +1,10 @@
+# OS Trash
+.DS_Store
+[Tt]humbs.db
+
+# Swap files
+.*.swp
+.*.swo
+
+# Database credentials
+dbAccessConfig.php

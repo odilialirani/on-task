@@ -1,4 +1,5 @@
 <?php
+	require(__DIR__ . "/dbAccessConfig.php");
 	class User {
 		private $name;			// User's name (String)
 		private $email;			// User's email (String)
